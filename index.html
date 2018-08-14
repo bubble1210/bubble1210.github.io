@@ -309,7 +309,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xwf">
       <meta itemprop="description" content="今生今世轮回尽, 来世愿为幻梦乡">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -350,12 +350,24 @@
                 
               
 
-              <time title="创建时间：2018-08-13 18:52:06 / 修改时间：18:51:47" itemprop="dateCreated datePublished" datetime="2018-08-13T18:52:06+08:00">2018-08-13</time>
+              <time title="创建时间：2018-08-13 18:52:06" itemprop="dateCreated datePublished" datetime="2018-08-13T18:52:06+08:00">2018-08-13</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-08-14 20:51:13" itemprop="dateModified" datetime="2018-08-14T20:51:13+08:00">2018-08-14</time>
               
             
           </span>
@@ -391,8 +403,7 @@
         
           
             <h2 id="Tensorflow笔记"><a href="#Tensorflow笔记" class="headerlink" title="Tensorflow笔记"></a>Tensorflow笔记</h2><hr>
-<p>###1.基本概念</p>
-<p>基于tensorflow的NN：用张量表示数据，用计算图搭建神经网络，用会话执行计算图，优化神经网络的参数(权值)，得到模型。</p>
+<h3 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1.基本概念"></a>1.基本概念</h3><p>基于tensorflow的NN：用张量表示数据，用计算图搭建神经网络，用会话执行计算图，优化神经网络的参数(权值)，得到模型。</p>
 <p>计算图（Graph）：搭建神经网络的计算过程，是承载一个或多个计算节点的一张图，只搭建网络，不计算。</p>
 <p>会话：执行计算图中的节点运算，用with结构实现</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">with tf.Session as sess:</span><br><span class="line">	print sess.run(y)</span><br></pre></td></tr></table></figure>
@@ -407,7 +418,7 @@
 <li>tf.fill 表示生成全定值数组</li>
 <li>tf.constant 表示生成直接给定值的数组</li>
 </ul>
-<p>###2.神经网络的搭建<br>神经网络的实现过程 ：</p>
+<h3 id="2-神经网络的搭建"><a href="#2-神经网络的搭建" class="headerlink" title="2.神经网络的搭建"></a>2.神经网络的搭建</h3><p>神经网络的实现过程 ：</p>
 <ul>
 <li>准备数据集，提取特征，作为输入喂给神经网络（Neural Network，NN）</li>
 <li>搭建NN结构，从输入到输出（先搭建计算图，再用会话执行），即前向传播计算输出</li>
@@ -481,7 +492,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xwf">
       <meta itemprop="description" content="今生今世轮回尽, 来世愿为幻梦乡">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -638,7 +649,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image"
-                src="/images/avatar.gif"
+                src="/images/avatar.jpg"
                 alt="xwf" />
             
               <p class="site-author-name" itemprop="name">xwf</p>
