@@ -16,7 +16,7 @@
 
 <html class="theme-next gemini use-motion" lang="zh-CN">
 <head>
-  <meta charset="UTF-8"/>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="#222">
@@ -117,7 +117,7 @@
 <meta property="og:description" content="1.基本概念基于tensorflow的NN：用张量表示数据，用计算图搭建神经网络，用会话执行计算图，优化神经网络的参数(权值)，得到模型。 计算图（Graph）：搭建神经网络的计算过程，是承载一个或多个计算节点的一张图，只搭建网络，不计算。 会话：执行计算图中的节点运算，用with结构实现 12with tf.Session as sess:	print sess.run(y)">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://img-blog.csdn.net/2018080821174843">
-<meta property="og:updated_time" content="2018-08-14T14:02:44.430Z">
+<meta property="og:updated_time" content="2018-08-15T11:37:28.597Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Tensorflow笔记1">
 <meta name="twitter:description" content="1.基本概念基于tensorflow的NN：用张量表示数据，用计算图搭建神经网络，用会话执行计算图，优化神经网络的参数(权值)，得到模型。 计算图（Graph）：搭建神经网络的计算过程，是承载一个或多个计算节点的一张图，只搭建网络，不计算。 会话：执行计算图中的节点运算，用with结构实现 12with tf.Session as sess:	print sess.run(y)">
@@ -174,7 +174,7 @@
       .logo-line-after i { right: initial; }
     }
   </style>
-</noscript>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </head>
 
@@ -185,7 +185,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -349,12 +349,24 @@
                 
               
 
-              <time title="创建时间：2018-08-14 21:07:26 / 修改时间：22:02:44" itemprop="dateCreated datePublished" datetime="2018-08-14T21:07:26+08:00">2018-08-14</time>
+              <time title="创建时间：2018-08-14 21:07:26" itemprop="dateCreated datePublished" datetime="2018-08-14T21:07:26+08:00">2018-08-14</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-08-15 19:37:28" itemprop="dateModified" datetime="2018-08-15T19:37:28+08:00">2018-08-15</time>
               
             
           </span>
@@ -438,7 +450,11 @@
 <p><div align="center"><img src="https://img-blog.csdn.net/2018080821174843" alt="图片"></div></p>
 <p>梯度下降参数更新公式为：</p>
 <script type="math/tex; mode=display">\theta_{n+1} =\theta_n- \alpha\dfrac{\partial j(\theta_n)}{\partial \theta_n}</script><p>其中，$j(\theta)$为损失函数，$\theta$为参数，$\alpha$为学习率。</p>
-<p>学习率：决定每次参数更新的幅度。</p>
+<script type="math/tex; mode=display">
+f(n)=\begin{cases}
+n/2, & \text{如果$ x<=2 $}\\
+3n+1, & \text{如果$ x>2 $}
+\end{cases}</script><p>学习率：决定每次参数更新的幅度。</p>
 
       
     </div>
@@ -795,7 +811,24 @@
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.0"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.0"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 
 
 
